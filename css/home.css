@@ -1,0 +1,46 @@
+*{
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+
+}
+h1{
+    text-align: center;
+    padding: 40px;
+    
+   
+}
+header{
+    background-color: violet;
+    color: greenyellow;
+}
+
+.navbar{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0px;
+    margin: 0px;
+    background-color: blueviolet;
+    width: 100%;
+
+}
+.nav-elem{
+   text-align: center;
+   padding: 10px;
+   text-decoration: none;
+   color: aquamarine;
+}
+
+main{
+    padding: 50px;
+}
+footer{
+    display: grid;
+    align-content: baseline;
+     background-color: violet;
+    color: greenyellow;
+    text-align: center;
+}
+.foot{
+    padding: 10px;
+}
