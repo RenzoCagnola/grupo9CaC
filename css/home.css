@@ -59,3 +59,29 @@ footer{
 .foot{
     padding: 10px;
 }
+
+/*------------------------*/
+
+.contenedor{
+    background-color: lightblue;
+    padding: 20px;   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.caja{
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+    width: 350px;
+    height: 450px;
+    border-radius: 8px;
+    margin: 20px;
+  
+}
+
+.bienvenida{
+    color: grey;
+    text-align: center;
+    
+}
