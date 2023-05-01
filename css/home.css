@@ -2,11 +2,16 @@
     font-family: sans-serif;
     padding: 0px;
     margin: 0px;
+    
 }
 
 body {
     display: grid;
     /* width: 100%; */
+     background-image: url(https://images2.imgbox.com/d9/c2/Ad3jlHTb_o.jpg);
+     background-repeat: repeat;
+
+     
 }
 
 /*------------------------*/
@@ -45,8 +50,47 @@ header {
 /*------------------------*/
 
 main{
-    padding: 50px;
+    display: grid;
+    padding: 30px;
+    margin: 0px;
+
 }
+
+.bienvenida{
+    color: rgb(100, 100, 100);
+    text-align: center;
+    
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    /* text-align: center; */
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.caja{
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+    width: 350px;
+    height: 450px;
+    border-radius: 8px;
+    margin: 20px;
+}
+ .caja > img {
+    height: 70%;
+ }
+
+ .contacto {
+
+    color: rgb(65, 64, 64);
+
+
+ }
 
 /*------------------------*/
 
@@ -62,26 +106,5 @@ footer{
 
 /*------------------------*/
 
-.contenedor{
-    background-color: lightblue;
-    padding: 20px;   
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
 
-.caja{
-    padding: 50px;
-    text-align: center;
-    background-color: white;
-    width: 350px;
-    height: 450px;
-    border-radius: 8px;
-    margin: 20px;
-  
-}
 
-.bienvenida{
-    color: grey;
-    text-align: center;
-    
-}
