@@ -31,22 +31,29 @@
         </div>
         <br><br>
         <div class="contacto">
-        <form action="">
-            <label for="firstname">Nombre: <br>
-            </label><input size="30" type="text" name="firstname" placeholder="Ingrese su nombre aqui..."> <br><br>
+        <form action="" name="formulario" method="get">
+            <label for="nombre">Nombre: <br>
+            </label><input size="30" type="text" name="nombre" id="nombre"> 
+            <br>
+            <br>
             <label for="mail">Mail: <br>
-            </label><input type="email" name="mail" required> <br><br>
+            </label><input type="email" name="mail" id="mail"> 
+            <br>
+            <br>
             <label for="telefono">Telefono (Opcional): <br>
-            </label><input type="tel" name="telefono" placeholder="ingrese su telefono aqui ...."> <br><br>
-            <label for="comentarios">Comentarios: <br> </label> <textarea name="comentarios" rows="10"
-                cols="30"></textarea>
-                <br>
+            </label><input type="tel" name="telefono" id="telefono"> 
+            <br>
+            <br>
+            <label for="comentarios">Comentarios: <br> </label> <textarea name="comentarios" rows="10"cols="30" id="comentarios"></textarea>
+            <br>
             <br>
             <input type="submit" value="Enviar">
         </form>
     
         </div>
         <br><br><br>
+
+        <script src="JS/script.js"></script>
 
         <div class="ubicacion">
             <h4>UBICACION (Zona Martinez)</h4>
@@ -56,7 +63,7 @@
         </div>
     </main>
     <footer>
-        <div class="contenedor">
+        <div class="contenedorfooter">
             <div class="foot">
                 <h3>Seguinos</h3>
                 <br>
@@ -72,8 +79,6 @@
                     <li><a href="nosotros.html" class="footer-link">Quienes somos?</a></li>
                     <li><a href="contacto.html" class="footer-link">Contacto</a></li>
                 </ul>
-
-
             </div>
         </div>
     </footer>

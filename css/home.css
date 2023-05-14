@@ -61,7 +61,7 @@ main{
     text-align: center;
     
 }
-.contenedor{
+.contenedormain{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr ;
@@ -70,7 +70,16 @@ main{
     /* border: lightblue; */
     /* padding: 20px; */
 }
+@media only screen and (max-width: 600px) {
+    .contenedormain{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr ;
+        justify-items: center;
 
+
+    }
+  }
 .caja{
     display: flex;
     flex-direction: column;
@@ -148,6 +157,14 @@ footer{
     align-content: baseline;
     background-color: #eaebe7;
     text-align: center;
+}
+
+.contenedorfooter{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-items: center;
+
 }
 .foot{
     padding: 10px;   
