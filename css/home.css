@@ -1,17 +1,17 @@
-*{
+* {
     font-family: sans-serif;
     padding: 0px;
     margin: 0px;
-    
+
 }
 
 body {
     display: grid;
     /* width: 100%; */
-     background-image: url(https://images2.imgbox.com/d9/c2/Ad3jlHTb_o.jpg);
-     background-repeat: repeat;
+    background-image: url(https://images2.imgbox.com/d9/c2/Ad3jlHTb_o.jpg);
+    background-repeat: repeat;
 
-     
+
 }
 
 /*------------------------*/
@@ -25,62 +25,79 @@ header {
 }
 
 .logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 200px;
 }
-.logo > img {
+
+.logo>img {
     height: 100%;
 }
-.navbar{
-    display:grid;
+
+.navbar {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 0px;
     margin: 0px;
     background-color: #dab7f0;
     width: 100%;
 }
-.nav-elem{
-   text-align: center;
-   padding: 10px;
-   color: #eaebe7;
+
+.nav-elem {
+    text-align: center;
+    padding: 10px;
+    color: #eaebe7;
 }
 
 /*------------------------*/
 
-main{
+main {
     display: grid;
     padding: 30px;
     margin: 0px;
 
 }
+
 /*----HOME--- */
-.bienvenida{
+.bienvenida {
     color: rgb(100, 100, 100);
     text-align: center;
-    
+
 }
-.contenedormain{
+
+.contenedormain {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
     /* align-items: center; */
     /* border: lightblue; */
     /* padding: 20px; */
 }
+
+#prueba {
+    position: relative;
+    left: 50%;
+}
+
 @media only screen and (max-width: 600px) {
-    .contenedormain{
+    .contenedormain {
         width: 100%;
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
         justify-items: center;
 
 
     }
-  }
-.caja{
+
+    #prueba {
+        position: relative;
+        left: 0%
+    }
+}
+
+.caja {
     display: flex;
     flex-direction: column;
     padding: 50px;
@@ -93,65 +110,118 @@ main{
     height: 450px;
     border-radius: 8px;
     margin: 10px;
-    
-} 
-.caja:hover{
+
+}
+
+.caja:hover {
     transform: translateY(-15px);
     transition-property: all;
     transition-duration: 1s;
 }
- .caja > img {
+
+.caja>img {
     height: 70%;
- }
+}
+
 /* ---PRODUCTOS--- */
-.prod-title{
+.prod-title {
     background-color: #dab7f0;
-   padding-top: 5px;
+    padding-top: 5px;
     text-align: center;
 }
-.product{
-    display: flex;
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: exp;
+    
+    padding: 3%;
+}
+
+.item3 {
+    grid-area: f1;
+}
+.item4 {
+    grid-area: f2;
+}
+.item5 {
+    grid-area: f3;
+}
+.item6 {
+    grid-area: f4;
+}
+.item7 {
+    grid-area: f5;
+}
+.item8 {
+    grid-area: f6;
+}
+.item9 {
+    grid-area: f7;
+    padding: 3%;
+}
+.item10 {
+    grid-area: f8;
+    padding: 3%;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        /*6 columnas y 3 filas*/
+        'header header header'
+        'exp exp exp'
+        'f1 f2 f3'
+        'f4 f5 f6'
+        'f7 f7 f7'
+        'f8 f8 f8';
     justify-content: center;
     background-color: #dab7f0;
     align-items: center;
 }
 
-.img-prod{
+.img-prod {
     width: 300px;
     height: 300px;
     padding: 3%;
-    
+
 }
-.prod-descrip{
+
+.prod-descrip {
     width: 50%;
     padding: 3%;
 }
 
 /* ---CONTACTO--- */
 
-.contac{
+.contac {
     text-align: center;
     color: #515250;
 
 
 }
-.contacto{
+
+.contacto {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
-    color:  rgb(70, 69, 69);
- }
+    color: rgb(70, 69, 69);
+}
 
- input{
+input {
     width: 100%;
- }
-textarea{
+}
+
+textarea {
     width: 100%
 }
+
 /*------------------------*/
 
-footer{
+footer {
     display: grid;
     /* grid-template-columns: 1fr 1fr ; */
     align-content: baseline;
@@ -159,22 +229,24 @@ footer{
     text-align: center;
 }
 
-.contenedorfooter{
+.contenedorfooter {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
 
 }
-.foot{
-    padding: 10px;   
+
+.foot {
+    padding: 10px;
 }
-.footer-link{
+
+.footer-link {
     display: block;
     text-align: left;
 }
 
 /*------------------------*/
-
-
-
+.nos{
+    text-align: center;
+}
