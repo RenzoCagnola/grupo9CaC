@@ -1,7 +1,7 @@
 * {
     font-family: sans-serif;
-    padding: 0px;
-    margin: 0px;
+    padding: 0%;
+    margin: 0%;
 
 }
 
@@ -69,17 +69,34 @@ main {
 .contenedormain {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     /* align-items: center; */
     /* border: lightblue; */
     /* padding: 20px; */
 }
 
-#prueba {
+/* #prueba {
     position: relative;
     left: 50%;
+} */
+
+@media only screen and (max-width: 1200px) {
+    .contenedormain {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+
+
+    }
+
+    #prueba {
+        position: relative;
+        left: 50%
+    }
 }
+
 
 @media only screen and (max-width: 600px) {
     .contenedormain {
@@ -170,7 +187,7 @@ main {
 .grid-container {
     display: grid;
     grid-template-areas:
-        /*6 columnas y 3 filas*/
+        /*3 columnas y 6 filas*/
         'header header header'
         'exp exp exp'
         'f1 f2 f3'
@@ -181,6 +198,53 @@ main {
     background-color: #dab7f0;
     align-items: center;
 }
+
+
+@media only screen and (max-width: 1000px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            /*3 columnas y 6 filas*/
+            'header header'
+            'exp exp'
+            'f1 f2'
+            'f3 f4'
+            'f5 f6'
+            'f7 f7'
+            'f8 f8';
+        justify-content: center;
+        background-color: #dab7f0;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            /*3 columnas y 6 filas*/
+            'header'
+            'exp'
+            'f1'
+            'f2'
+            'f3'
+            'f4'
+            'f5'
+            'f6'
+            'f7'
+            'f8';
+        justify-content: center;
+        background-color: #dab7f0;
+        align-items: center;
+    }
+
+    .yt{
+        width:  100%;
+
+    }
+}
+
+
 
 .img-prod {
     width: 300px;
@@ -248,5 +312,6 @@ footer {
 
 /*------------------------*/
 .nos{
-    text-align: center;
+    text-align: center
+    back
 }
