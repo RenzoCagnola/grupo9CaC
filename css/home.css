@@ -293,9 +293,13 @@ main {
       font-size: 20px;
     }
   
-    input, textarea {
-      width: 80%;
-    }
+
+  }
+
+  .ubicacion {
+    text-align: center;
+    color: #515250;
+
   }
 
 /*------------------------*/
@@ -346,4 +350,9 @@ footer {
     .nos {
         padding: 30px;
     }
+}
+
+.usu {
+    text-align: center;
+    
 }

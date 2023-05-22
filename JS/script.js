@@ -31,3 +31,5 @@ var formulario = document.getElementsByName('formulario')[0],
             validarComentario(e)
         }
         formulario.addEventListener("submit", validar)
+
+
